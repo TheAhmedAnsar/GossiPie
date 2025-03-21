@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#8807FD</color>
+    <!--    CHanging the color of FAB button-->
+    <color name="teal_200">#8807FD</color>
+<!--    <color name="teal_700">#FF018786</color>-->
+    <color name="teal_700">#8807FD</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#5E5959</color>
+<color name="grey">#000000</color>
+<color name="blue">#000000</color>
+    <color name="whitecolor">#ffff</color>
+    <color name="indigo">#242bd9</color>
+    <color name="ActionbarTheme">#F8630CB3</color>
+<!--    <color name="ActionbarTheme">#F88B24EA</color>-->
+
+    <!--    For light mode-->
+    <color name="main_bg_color">#FFFFFF</color>
+    <color name="backgroundColor">#F87A0CDF</color>
+    <color name="textColor">#000000</color>
+<!--    //Below color is used for fab icon in light mode-->
+    <color name="fabColor">#9E4EE8</color>
+
+<!--    //For bottom navigation menu item text color-->
+
+    <color name="bottom_nav_item">#828282</color>
+
+<!--    //Below color is used for navbar item bg when clicked in light mode-->
+
+    <color name="nav_item_color">#f9f1fe</color>
+
+<!--    //Below color is used for navbar item text when clicked in light mode-->
+
+    <color name="nav_item_text">#9E4EE8</color>
+
+    <color name="nav_item_icon">#9E4EE8</color>
+
+<!--    //This is used for upper status bar color of every activity-->
+
+    <color name="statusbarColor1">#F8630CB3</color>
+
+
+<!--    This is used for down system navigation bar color of every activity-->
+
+    <color name="DownNavigationColor">#FFFFFF</color>
+
+<!--    //This is used for the upper status bar of private chat-->
+
+    <color name="statusbarColor">#181f27</color>
+
+<!--    This is used for down system navigation bar color of Private Chat-->
+    <color name="PrivateDownNavigation">#181f27</color>
+
+    <color name="option_menu_bg">#ffffff</color>
+
+
+
+
+<!--    NotesTheme Color-->
+
+    <color name="purple_2001">#FFBB86FC</color>
+    <color name="purple_5002">#FF6200EE</color>
+    <color name="purple_7003">#FF3700B3</color>
+    <color name="teal_2004">#FF03DAC5</color>
+    <color name="teal_7005">#FF018786</color>
+    <color name="black6">#FF000000</color>
+    <color name="white7">#FFFFFFFF</color>
+
+
+
+
+
+
+</resources>

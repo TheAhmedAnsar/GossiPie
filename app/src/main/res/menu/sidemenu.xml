@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <item
+        android:id="@+id/mi_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+
+        />
+
+
+
+    <item
+        android:id="@+id/chat_history"
+        android:title="Chat history"
+        app:showAsAction="never" />
+
+
+    <item
+    android:id="@+id/item2"
+    android:title="Settings"
+    app:showAsAction="never"
+    />
+    <item
+    android:id="@+id/item3"
+    android:title="Invite"
+
+    />
+
+
+
+
+
+
+</menu>

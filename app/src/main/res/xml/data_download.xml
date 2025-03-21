@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory  app:title="Auto-download"
+        app:summary="Choose what to download and when"
+        app:iconSpaceReserved="false">
+
+        <MultiSelectListPreference
+
+            app:key="usingdata"
+            app:defaultValue="@array/numbers_values"
+            app:entries="@array/when"
+            app:entryValues="@array/numbers_values"
+            app:title="When using mobile data"
+            app:iconSpaceReserved="false"/>
+
+        <MultiSelectListPreference
+            app:defaultValue="@array/numbers_values"
+            app:entries="@array/when"
+            app:entryValues="@array/numbers_values"
+            app:title="When using mobile wi-fi"
+            app:iconSpaceReserved="false"
+            app:key="usingwifi"
+            />
+        <MultiSelectListPreference app:title="When roaming"
+         app:defaultValue="@array/numbers_values"
+            app:entries="@array/when"
+            app:entryValues="@array/numbers_values"
+            app:iconSpaceReserved="false"
+            app:key="usingroaming"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Auto-play media"
+        app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat app:title="GIFs"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat app:title="Photos"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat app:title="Videos"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+    
+    <Preference app:summary="For better performance voice messages are automatically downloaded"
+        app:iconSpaceReserved="false"/>
+
+
+
+</PreferenceScreen>

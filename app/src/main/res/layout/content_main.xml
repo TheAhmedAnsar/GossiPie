@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+
+    <!--   -->
+
+
+    <!--    //This color is of ToolBar-->
+    <!--    android:background="#D9FEC5E5"-->
+    <!--    android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+
+    <!--    #F87A0CDF  Final color-->
+
+    <!--    com.google.android.material.tabs.TabLayout
+      app:tabIndicatorGravity="stretch"
+      app:tabIndicatorColor="@color/...."
+      ..>-->
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/backgroundColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.NewPopupTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="@color/backgroundColor"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:tabIconTint="@color/whitecolor"
+        app:tabTextColor="@color/whitecolor">
+        <!--        android:background="#FEC5E5"-->
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/firstItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Groups" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/secondItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats" >
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/thirditem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stories" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/fabColor"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:backgroundTint="@color/fabColor"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="24dp"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/ic_baseline_group_add_24"
+        app:tint="@color/whitecolor"
+        app:useCompatPadding="false" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/fabColor"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_chat_24"
+        android:visibility="visible"
+        app:backgroundTint="@color/fabColor"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="22.5dp"
+        app:rippleColor="#FFFFFF"
+        app:tint="@color/whitecolor" />
+
+
+    <!--    // This is our Parent Fab Button-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/fabColor"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:backgroundTint="@color/fabColor"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="23dp"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        app:tint="@color/whitecolor" />
+
+
+    <!--    Sub Fabs Buttons-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FDFDFD"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:visibility="visible"
+        app:backgroundTint="#FDFDFD"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton2"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton2"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24"
+        app:tint="@color/fabColor" />
+
+    <TextView
+        android:id="@+id/story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Add Story"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/createfab"
+        app:layout_constraintEnd_toStartOf="@+id/createfab"
+        app:layout_constraintTop_toTopOf="@id/createfab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_person_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FDFDFD"
+        android:clickable="true"
+        android:visibility="visible"
+        app:backgroundTint="#FDFDFD"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/createfab"
+        app:layout_constraintEnd_toEndOf="@+id/createfab"
+        app:layout_constraintStart_toStartOf="@+id/createfab"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/ic_baseline_create_24"
+        app:tint="@color/fabColor" />
+
+
+    <TextView
+
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Create Story"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/add_person_fab"
+        app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="409dp"
+        android:layout_height="634dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+<!--The mentioned code is for dark mode button design and position-->
+    <!--            android:backgroundTint="#F87A0CDF"-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton2"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--    android:background="@null"-->
+<!--            android:foregroundGravity="center"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.867"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_baseline_nights_stay_24"-->
+<!--            app:tint="@color/whitecolor" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

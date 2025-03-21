@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+        <shape android:shape="oval">
+            <solid android:color="#486581"/>
+            <size android:height="3dp"
+                android:width="2dp"/>
+            <stroke android:width="0.5sp"
+                android:color="#486581">
+            </stroke>
+
+        </shape>
+    </item>
+
+
+    <item android:drawable="@drawable/ic_dark_mode_black_24dp"
+        android:bottom="5dp"
+        android:top="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        />
+
+
+</layer-list>

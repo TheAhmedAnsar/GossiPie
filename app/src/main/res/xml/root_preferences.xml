@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:key="notification"
+        app:title="Notifications and Sounds"
+        app:icon="@drawable/ic_baseline_notifications_active_24"
+        app:summary="Mesages, vibrate, group, calls"
+        app:iconSpaceReserved="true"
+        />
+    <Preference
+        app:iconSpaceReserved="true"
+        app:key="privacy"
+        app:icon="@drawable/ic_baseline_privacy_tip_24"
+        app:title="Privacy and Security"
+        app:summary="Last seen, profile, story"
+        />
+    <Preference
+        app:iconSpaceReserved="true"
+app:icon="@drawable/ic_baseline_wallpaper_24"
+        app:key="appearance"
+        app:title="Appearance"
+
+        app:summary="Theme, font, background"
+        />
+    <Preference
+        app:iconSpaceReserved="true"
+
+        app:key="data"
+        app:icon="@drawable/ic_baseline_data_usage_24"
+        app:title="Data and Downloads"
+        app:summary="media, mobile-data, wi-fi"
+        />
+
+    <PreferenceCategory app:title="Help desk"
+        app:iconSpaceReserved="true"
+        >
+        <Preference app:title="Ask a Question"
+            app:iconSpaceReserved="true"
+            app:icon="@drawable/ic_baseline_question_answer_24"
+            />
+        <Preference app:title="Privacy Policy"
+            app:iconSpaceReserved="true"
+            app:icon="@drawable/ic_baseline_policy_24"
+            />
+        <Preference app:title="Terms and Conditions"
+            app:iconSpaceReserved="true"
+            app:icon="@drawable/ic_baseline_sticky_note_2_24"
+            />
+        <Preference app:title="App info"
+            app:iconSpaceReserved="true"
+            app:icon="@drawable/ic_baseline_info_24"
+            />
+
+
+
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

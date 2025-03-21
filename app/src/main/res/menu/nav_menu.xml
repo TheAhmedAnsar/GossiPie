@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context = ".MainActivity">
+
+
+<group
+    android:id="@+id/navmenu">
+    <item
+        android:id="@+id/menuItem1"
+        android:title="Account"
+        android:icon="@drawable/ic_baseline_perm_identity_24"/>
+    <item
+        android:id="@+id/call_history"
+        android:title="Call History"
+        android:icon="@drawable/ic_baseline_history_24"/>
+
+    <item android:id="@+id/secure_chat"
+        android:icon="@drawable/ic_baseline_enhanced_encryption_24"
+        android:title="Chat Privacy"/>
+
+<!--    This group is for Archived Chats and Saved Chats in nav bar under Chat Privacy item-->
+<!--    <group-->
+<!--        android:id="@+id/chat_privacy"-->
+<!--        android:visible="false">-->
+
+<!--        <item-->
+<!--            android:id="@+id/archive"-->
+<!--            android:icon="@drawable/ic_baseline_archive_24"-->
+<!--            android:title="Archived Chats" />-->
+<!--        <item-->
+<!--            android:id="@+id/saved_chats"-->
+<!--            android:icon="@drawable/ic_baseline_save_24"-->
+<!--            android:iconTint="@color/grey"-->
+<!--            android:title="Saved Chats" />-->
+<!--    </group>-->
+
+        <item
+            android:id="@+id/menuItem2"
+            android:icon="@drawable/ic_baseline_sticky_note_2_24"
+            android:title="PieNotes" />
+        <item
+            android:id="@+id/menuItem3"
+            android:icon="@drawable/ic_baseline_article_24"
+            android:iconTint="@color/grey"
+            android:title="PieNews" />
+
+    <item android:id="@+id/check_fake"
+        android:icon="@drawable/ic_baseline_remove_red_eye_24"
+        android:title="Check Fake"/>
+
+</group>
+
+
+
+
+
+
+<!--<item android:title=" new Support">-->
+<!--    <menu>-->
+<!--        <group>-->
+
+<!--            <item android:title="Hiii"/>-->
+
+<!--        </group>-->
+<!--    </menu>-->
+<!--</item>-->
+    <item android:title="@string/navBarGroup">
+
+            <menu>
+                <group>
+                <item
+                    android:id="@+id/menuItem5"
+                    android:icon="@drawable/ic_baseline_adb_24"
+                    android:title="PieBot" />
+
+                <item
+                    android:id="@+id/menuItem6"
+                    android:icon="@drawable/ic_baseline_contact_support_24"
+                    android:title="Contact us"
+                    />
+                </group>
+            </menu>
+
+        
+            </item>
+
+
+</menu>
+
+
+
+
+
+
+
+

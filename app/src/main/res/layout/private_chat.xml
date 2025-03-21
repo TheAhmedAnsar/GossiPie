@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".private_chat"
+    android:background="#191919">
+
+<!--&lt;!&ndash;    #1F2933;       #1b2225 - Old bg color-->
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#1F2933"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private Chat"
+            android:textColor="#FFFF"
+            android:textSize="18.5dp"
+            android:layout_marginLeft="23dp"
+            android:gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_private_mode_icon_white">
+
+        </TextView>
+
+
+
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:searchIcon="@drawable/ic_baseline_search_24"-->
+<!--            app:closeIcon="@drawable/ic_baseline_clear_24"-->
+<!--            android:layout_marginLeft="145dp"/>-->
+
+    </androidx.appcompat.widget.Toolbar>
+
+<com.google.android.material.bottomappbar.BottomAppBar
+    android:id="@+id/bottomAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:backgroundTint="#1F2933"
+
+
+    app:fabCradleRoundedCornerRadius="50dp"
+    app:fabCradleMargin="7dp">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1F2933"
+        app:itemIconTint="@drawable/bottom_item_onclick"
+        app:itemRippleColor="@null"
+        app:itemTextColor="@drawable/bottom_item_onclick"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navmenu"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        />
+
+
+</com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_round_person_add_alt_1_24"
+        app:backgroundTint="#3E4C59"
+        app:tint="#FFFFFF"
+        app:layout_anchor="@+id/bottomAppBar"
+        app:maxImageSize="26dp" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

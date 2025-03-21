@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Privacy"/>
+
+        <ListPreference
+            app:key="lastseen"
+            app:title="Last seen"
+            app:iconSpaceReserved="false"
+            app:defaultValue="0"
+            app:entryValues="@array/numbers_values"
+            app:entries="@array/numbers_input"
+            app:summary="%s"
+            />
+        <ListPreference app:title="Profile picture"
+            app:iconSpaceReserved="false"
+            app:defaultValue="0"
+            app:entryValues="@array/numbers_values"
+            app:entries="@array/numbers_input"
+            app:summary="%s"
+            app:key="profile"
+
+            />
+        <ListPreference app:title="Bio"
+            app:iconSpaceReserved="false"
+            app:defaultValue="0"
+            app:entryValues="@array/numbers_values"
+            app:entries="@array/numbers_input"
+            app:summary="%s"
+            app:key="bio"
+
+            />
+        <ListPreference app:title="Story"
+            app:iconSpaceReserved="false"
+            app:defaultValue="0"
+            app:entryValues="@array/numbers_values"
+            app:entries="@array/numbers_input"
+            app:summary="%s"
+            app:key="story"
+
+            />
+
+        <Preference app:title="Blocked contacts"
+            app:iconSpaceReserved="false"/>
+
+    <PreferenceCategory app:title="Security"
+        app:iconSpaceReserved="false"/>
+
+    <ListPreference app:title="Biometric lock"
+        app:iconSpaceReserved="false"
+        app:entryValues="@array/numbers_values"
+        app:entries="@array/numbers_values"
+        app:defaultValue="1"
+        />
+    <Preference app:title="End-to-end encryption"
+        app:iconSpaceReserved="false"/>
+
+</PreferenceScreen>
